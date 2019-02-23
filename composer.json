@@ -1,21 +1,23 @@
 {
-    "name": "rakibtg/zincphp",
-    "description": "A RESTful micro framework for PHP",
-    "keywords": ["framework", "zincphp", "php", "rest", "api", "micro"],
-    "type": "project",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "rakibtg",
-            "email": "rakibtg@gmail.com"
-        }
-    ],
-    "require": {
-        "php": ">=5.6",
-        "firebase/php-jwt": "^5.0",
-        "illuminate/database": "^5.7",
-        "illuminate/pagination": "^5.7",
-        "illuminate/http": "^5.7",
-        "danielstjules/stringy": "^3.1"
+  "name": "getzincphp/zincphp",
+
+  "repositories": [
+    {
+      "type": "path",
+      "url": "../cli"
+    },
+    {
+      "type": "path",
+      "url": "../framework"
     }
+  ],
+
+  "require": {
+    "getzincphp/framework": "@dev"
+  },
+
+  "require-dev": {
+    "getzincphp/cli": "@dev"
+  }
+
 }

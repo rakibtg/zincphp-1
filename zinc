@@ -1,15 +1,7 @@
 #!/usr/bin/php
+<?php
 
-<?php require_once './app/core/cli/cli_loader.php';
+  require_once __DIR__ . '/vendor/autoload.php';
 
-  /*
-
-    CLI handler, it executes all valid commands from the terminal.
-    -> Param $env is from the cli_loader file, imported above.
-    -> Param $argv is the system arguments variable.
-
-    To view all available CLI commands list type "php zinc help"
-
-  */
-  
-  \ZincPHP\CLI\execute( $env, $argv );
+  define('ZINCPHP_ROOT', __DIR__);
+  (new ZincCLI\ZincCLI())->execute( $argv );
