@@ -16,11 +16,11 @@
   ],
 
   "require": {
-    "getzincphp/framework": "@dev"
+    "getzincphp/framework": "dev-master@dev"
   },
 
   "require-dev": {
-    "getzincphp/cli": "@dev",
+    "getzincphp/cli": "dev-master@dev",
     "phpunit/phpunit": "^8.0"
   },
 
