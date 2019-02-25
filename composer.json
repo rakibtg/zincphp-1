@@ -4,32 +4,11 @@
   "keywords": ["framework", "zincphp", "php", "rest", "api", "micro"],
   "type": "project",
   "license": "MIT",
-  "__--repositories": [
-    {
-      "type": "path",
-      "url": "../cli"
-    },
-    {
-      "type": "path",
-      "url": "../framework"
-    }
-  ],
-
   "require": {
-    "getzincphp/framework": "dev-master@dev"
+    "getzincphp/framework": "^0.1"
   },
-
   "require-dev": {
-    "getzincphp/cli": "dev-master@dev",
-    "phpunit/phpunit": "^8.0"
-  },
-
-  "__--require": {
-    "getzincphp/framework": "@dev"
-  },
-
-  "__--require-dev": {
-    "getzincphp/cli": "@dev",
+    "getzincphp/cli": "^0.1",
     "phpunit/phpunit": "^8.0"
   }
 }
