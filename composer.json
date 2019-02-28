@@ -5,10 +5,10 @@
   "type": "project",
   "license": "MIT",
   "require": {
-    "getzincphp/framework": "^0.1"
+    "getzincphp/framework": "^0.2"
   },
   "require-dev": {
-    "getzincphp/cli": "^0.2",
+    "getzincphp/cli": "^0.3",
     "phpunit/phpunit": "^8.0"
   }
 }
