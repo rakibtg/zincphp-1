@@ -13,7 +13,7 @@
  - Under active development
  - Not ready to be used in production
  - A side project
- - Working on the documentations, automatic RESTful API testing
+ - Working on the documentations 😱
  - For any discussion about this framework please direct message me on Twitter at [@rakibtg](https://www.twitter.com/rakibtg "Twitter profile") or mail me at rakibtg<•at•>gmail<•dot•>com 
 ---
 
@@ -80,16 +80,21 @@ This would create the block file inside the `/blocks/api/v1/blog/` and the API e
 
 Want to test the Alpha version of ZincPHP? Great, let's do it.
 
-- Clone the project
+- Use composer to create a new project,
   ```
-  git clone git@github.com:rakibtg/ZincPHP.git 'myApp'
+  composer create-project getzincphp/zincphp "mybackend" "^v0.14"
   ```
 
 - Change the directory
   ```
-  cd myApp
+  cd mybackend
   ```
-- You need to create an environment file in   order to start using the framework. Open  terminal/cmd and type
+
+- Install all dependencies.
+  ```
+  composer install
+  ```
+- Create an environment configuration file.
   ```
   php zinc env:new
   ```
@@ -99,7 +104,7 @@ Want to test the Alpha version of ZincPHP? Great, let's do it.
   php zinc make:block welcome --get
   ```
   Once you run this above command a block file will be created at `/myApp/blocks/welcome/get.welcome.php`
-- Go to the block file and for our testing purpose we will just send a "Hello World" message. To send a response we will use the `\App::response()` method in the block file like this
+- Go to the block file and for our testing purpose we will just send a "Hello World" response. To send a response we will use the `\App::response()` method in the block file in its `response()` life cycle. Example:
   ```
   <?php
     namespace ZincPHP\Blocks\index;
