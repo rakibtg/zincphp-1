@@ -7,9 +7,11 @@
    * 
    */
 
-  \App::seed( 'users_feed_cache' )->insert([
+  \App::seed( 'users' )->insert([
     [
       'name' => 'Kazi',
-      'email' => 'hi@rakibtg.com'
+      'email' => 'hi@rakibtg.com',
+      'password' => password_hash(trim('banana'), PASSWORD_DEFAULT),
+      'bio' => 'A very nice man.'
     ]
   ]);
