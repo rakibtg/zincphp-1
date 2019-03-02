@@ -7,6 +7,8 @@
 <h1 align="center">ZincPHP</h1>
 <h2 align="center">A Micro Framework to build REST API for PHP</h2>
 
+### Please note that this project was migrated from [rakibtg/zincphp](https://github.com/rakibtg/ZincPHP) to [getzincphp/zincphp](https://github.com/getzincphp/zincphp). 
+
 ## Development status: 
  - Under active development
  - Not ready to be used in production
@@ -100,16 +102,15 @@ Want to test the Alpha version of ZincPHP? Great, let's do it.
 - Go to the block file and for our testing purpose we will just send a "Hello World" message. To send a response we will use the `\App::response()` method in the block file like this
   ```
   <?php
+    namespace ZincPHP\Blocks\index;
 
-    /**
-    * Hello world block.
-    * 
-    */
+    class GetIndex extends \ZincPHP\block\ZincBlock {
 
-    \App::response()
-      ->data('Hello World')
-      ->send();
+      public function response() {
 
+        return \App::response('Hello World)->pretty();
+      }
+    }
   ```
 - Now start the ZincPHP development server
   ```
